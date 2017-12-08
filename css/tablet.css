@@ -1,0 +1,31 @@
+
+
+
+#dirHeader{
+	padding-right: 20px;
+	left: 250px;
+}
+
+.fileFormHolder span{
+display: block;
+position: static;
+text-align: left;
+padding-bottom: 10px;
+padding-left: 35px;
+}
+#sort{
+	right: 160px;
+}
+
+#searchInput{
+	width: 100px;
+}
+
+.leftCol{
+	width: 250px;
+}
+.files{
+	margin-left: 250px;
+	padding-left: 50px;
+	padding-top: 140px;
+}

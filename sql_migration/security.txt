@@ -1,0 +1,21 @@
+CREATE TABLE security_descriptors (id INT NOT NULL AUTO_INCREMENT,descriptor VARCHAR(250), PRIMARY KEY(id));
+
+INSERT INTO security_descriptors (descriptor) VALUES ("Agricole");
+INSERT INTO security_descriptors (descriptor) VALUES ("Environnement");
+INSERT INTO security_descriptors (descriptor) VALUES ("Génie Civil");
+INSERT INTO security_descriptors (descriptor) VALUES ("Génie du Bâtiment");
+INSERT INTO security_descriptors (descriptor) VALUES ("Olfactométrie");
+
+CREATE TABLE user_security (user_id INT, security_descriptor_id INT, PRIMARY KEY(user_id, security_descriptor_id));
+
+INSERT INTO user_security (user_id, security_descriptor_id) VALUES (82, 1);
+INSERT INTO user_security (user_id, security_descriptor_id) VALUES (20, 2);
+
+CREATE TABLE file_security (file_id INT, security_descriptor_id INT, PRIMARY KEY(file_id, security_descriptor_id));
+
+CREATE TABLE file_manager (id INT NOT NULL AUTO_INCREMENT, file_path VARCHAR(5000) NOT NULL, deletion_date_time DATETIME, PRIMARY KEY(id));
+
+ALTER TABLE users ADD name varchar(250);
+
+
+ALTER TABLE file_manager ADD comment varchar(2500);

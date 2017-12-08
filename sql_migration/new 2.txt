@@ -1,0 +1,5 @@
+17 :
+6 - 10 - Deobfuscation
+18 :
+2-4 - Table creations and tests
+5:30 - 10 - admin settings
